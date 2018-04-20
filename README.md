@@ -30,4 +30,7 @@ In tmux, hit the prefix `ctrl+b` and then:
 
 # Dropbox on Ubuntu
 
-source: [homepage](https://www.dropbox.com/de/help/desktop-web/linux-commands)
+source: [homepage](https://www.dropbox.com/de/install-linux)
+```
+sudo dpkg -i Downloads/dropbox_2015.10.28_amd64.deb
+```
