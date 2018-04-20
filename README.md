@@ -34,3 +34,4 @@ source: [homepage](https://www.dropbox.com/de/install-linux)
 ```
 sudo dpkg -i Downloads/dropbox_2015.10.28_amd64.deb
 ```
+If you want to try [this](https://www.dropbox.com/de/help/desktop-web/linux-commands) again with tar-file
