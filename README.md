@@ -27,3 +27,7 @@ In tmux, hit the prefix `ctrl+b` and then:
   |" | horizontal split|
 
 </center>
+
+# Dropbox on Ubuntu
+
+source: [homepage](https://www.dropbox.com/de/help/desktop-web/linux-commands)
