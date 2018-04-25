@@ -34,7 +34,7 @@ source: [homepage](https://www.dropbox.com/de/install-linux)
 ```
 sudo dpkg -i Downloads/dropbox_2015.10.28_amd64.deb
 ```
-If you want to try [this](https://www.dropbox.com/de/help/desktop-web/linux-commands) again with tar-file
+Can also try [this](https://www.dropbox.com/de/help/desktop-web/linux-commands) with tar-file
 
 # Sublime Text 3
 
@@ -47,3 +47,4 @@ echo "deb https://download.sublimetext.com/ apt/dev/" | sudo tee /etc/apt/source
 sudo apt-get update
 sudo apt-get install sublime-text
 ```
+Can also be installed with [tar-file](https://download.sublimetext.com/sublime_text_3_build_3143_x64.tar.bz2)
