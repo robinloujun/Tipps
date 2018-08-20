@@ -34,6 +34,8 @@ source: [homepage](https://www.dropbox.com/de/install-linux)
 ```
 sudo dpkg -i Downloads/dropbox_2015.10.28_amd64.deb
 ```
+In case of Error with dependencies ```sudo apt-get install -f```
+
 Can also try [this](https://www.dropbox.com/de/help/desktop-web/linux-commands) with tar-file
 
 # Sublime Text 3
