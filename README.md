@@ -30,13 +30,13 @@ In tmux, hit the prefix `ctrl+b` and then:
 
 # Dropbox on Ubuntu
 
-source: [homepage](https://www.dropbox.com/de/install-linux)
-```
-sudo dpkg -i Downloads/dropbox_2015.10.28_amd64.deb
-```
-In case of Error with dependencies ```sudo apt-get install -f```
-
+Download from the [homepage](https://www.dropbox.com/de/install-linux) and ```sudo dpkg -i Downloads/dropbox_2015.10.28_amd64.deb```  
+In case of Error with dependencies ```sudo apt-get install -f```  
 Can also try [this](https://www.dropbox.com/de/help/desktop-web/linux-commands) with tar-file
+
+# Skype for Linux
+
+Download from the [homepage](https://www.skype.com/en/get-skype/) and launch ```sudo dpkg -i Downloads/skypeforlinux-64.deb```
 
 # Sublime Text 3
 
