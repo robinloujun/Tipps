@@ -1,5 +1,29 @@
-# tmux
+## Initilization for new Ubuntu
+```
+sudo apt-get install kate
+sudo apt-get install okular
+sudo apt-get install yakuake
+sudo apt-get install git-core
+```
+add SSH key to github etc. with ```ssh-keygen -t rsa -b 4096 -C "anonymous@mail.com```
 
+## Dropbox for Ubuntu
+
+Download from the [homepage](https://www.dropbox.com/de/install-linux) and ```sudo dpkg -i Downloads/dropbox_2015.10.28_amd64.deb```  
+In case of Error with dependencies ```sudo apt-get install -f```  
+Can also try [this](https://www.dropbox.com/de/help/desktop-web/linux-commands) with tar-file
+
+## Skype for Linux
+
+Download from the [homepage](https://www.skype.com/en/get-skype/) and launch ```sudo dpkg -i Downloads/skypeforlinux-64.deb```
+
+## MATLAB for Linux
+
+Download the installer from the [homepage](https://de.mathworks.com/downloads/web_downloads) and extract into a new folder like /home/xxx/MATLAB,   
+then install with ```sudo ~/MATLAB/install```. There is an [intruduction](https://de.mathworks.com/help/install/ug/install-mathworks-software.html).
+
+## tmux
+An option for splitting the terminal
 ### Installation
 
 ```
@@ -28,17 +52,7 @@ In tmux, hit the prefix `ctrl+b` and then:
 
 </center>
 
-# Dropbox on Ubuntu
-
-Download from the [homepage](https://www.dropbox.com/de/install-linux) and ```sudo dpkg -i Downloads/dropbox_2015.10.28_amd64.deb```  
-In case of Error with dependencies ```sudo apt-get install -f```  
-Can also try [this](https://www.dropbox.com/de/help/desktop-web/linux-commands) with tar-file
-
-# Skype for Linux
-
-Download from the [homepage](https://www.skype.com/en/get-skype/) and launch ```sudo dpkg -i Downloads/skypeforlinux-64.deb```
-
-# Sublime Text 3
+## Sublime Text 3
 
 source: [homepage](https://www.sublimetext.com/docs/3/linux_repositories.html#apt)
 
