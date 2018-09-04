@@ -4,6 +4,10 @@ sudo apt-get install kate
 sudo apt-get install okular
 sudo apt-get install yakuake
 sudo apt-get install git-core
+sudo apt-get install build-essential
+sudo apt-get install qtcreator
+sudo apt-get install qt5-default
+sudo apt-get install qt5-doc
 ```
 add SSH key to github etc. with ```ssh-keygen -t rsa -b 4096 -C "anonymous@mail.com```
 
