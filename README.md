@@ -7,20 +7,31 @@ sudo apt-get install git-core
 ```
 add SSH key to github etc. with ```ssh-keygen -t rsa -b 4096 -C "anonymous@mail.com```
 
-## Dropbox for Ubuntu
+## Sogou
+
+Download from the [homepage](https://pinyin.sogou.com/linux/?r=pinyin) and ```sudo dpkg -i Downloads/sogoupinyin_2.2.0.0108_amd64.deb```  
+
+## Dropbox
 
 Download from the [homepage](https://www.dropbox.com/de/install-linux) and ```sudo dpkg -i Downloads/dropbox_2015.10.28_amd64.deb```  
 In case of Error with dependencies ```sudo apt-get install -f```  
 Can also try [this](https://www.dropbox.com/de/help/desktop-web/linux-commands) with tar-file
 
-## Skype for Linux
+## Skype
 
 Download from the [homepage](https://www.skype.com/en/get-skype/) and launch ```sudo dpkg -i Downloads/skypeforlinux-64.deb```
 
-## MATLAB for Linux
+## MATLAB
 
 Download the installer from the [homepage](https://de.mathworks.com/downloads/web_downloads) and extract into a new folder like /home/xxx/MATLAB,   
 then install with ```sudo ~/MATLAB/install```. There is an [intruduction](https://de.mathworks.com/help/install/ug/install-mathworks-software.html).
+
+## LaTeX
+
+```
+sudo apt-get install texlive-full
+sudo apt-get install texstudio
+```
 
 ## tmux
 An option for splitting the terminal
