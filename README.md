@@ -25,6 +25,7 @@ Download from the [homepage](https://www.skype.com/en/get-skype/) and launch ```
 
 Download the installer from the [homepage](https://de.mathworks.com/downloads/web_downloads) and extract into a new folder like /home/xxx/MATLAB,   
 then install with ```sudo ~/MATLAB/install```. There is an [intruduction](https://de.mathworks.com/help/install/ug/install-mathworks-software.html).
+One more thing to do: add an entry to the launcher with ```sudo apt-get install matlab-support```
 
 ## LaTeX
 
