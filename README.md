@@ -47,6 +47,10 @@ sudo apt-get install texlive-full
 sudo apt-get install texstudio
 ```
 
+## JabRef
+
+[Java-related](http://help.jabref.org/en/Installation#verify-java-installation) and `sudo apt-get install jabref`
+
 ## tmux
 An option for splitting the terminal
 ### Installation
