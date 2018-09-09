@@ -4,10 +4,8 @@ sudo apt-get install kate
 sudo apt-get install okular
 sudo apt-get install yakuake
 sudo apt-get install git-core
-sudo apt-get install build-essential
+sudo apt-get install build-essential libgl1-mesa-dev 
 sudo apt-get install qtcreator
-sudo apt-get install qt5-default
-sudo apt-get install qt5-doc
 ```
 add SSH key to github etc. with ```ssh-keygen -t rsa -b 4096 -C "anonymous@mail.com```
 
@@ -25,9 +23,13 @@ Can also try [this](https://www.dropbox.com/de/help/desktop-web/linux-commands) 
 
 Download from the [homepage](https://www.skype.com/en/get-skype/) and launch ```sudo dpkg -i Downloads/skypeforlinux-64.deb```
 
+## QtCreator
+
+Download from the [homepage](http://download.qt.io/official_releases/qt/), choose a version and download the installer, set the file permission using `chmod +x ~/Downloads/qt-opensource-linux-x64-5.11.1.run`, then run the installer with `~/Downloads/qt-opensource-linux-x64-5.11.1.run`.
+
 ## MATLAB
 
-Download the installer from the [homepage](https://de.mathworks.com/downloads/web_downloads) and extract into a new folder like /home/xxx/MATLAB,   
+Download the installer from the [homepage](https://de.mathworks.com/downloads/web_downloads) and extract into a new folder like /home/user/MATLAB,   
 then install with ```sudo ~/MATLAB/install```. There is an [intruduction](https://de.mathworks.com/help/install/ug/install-mathworks-software.html).
 One more thing to do: add an entry to the launcher with ```sudo apt-get install matlab-support```
 
