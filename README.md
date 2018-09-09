@@ -4,10 +4,16 @@ sudo apt-get install kate
 sudo apt-get install okular
 sudo apt-get install yakuake
 sudo apt-get install git-core
-sudo apt-get install build-essential libgl1-mesa-dev 
-sudo apt-get install qtcreator
 ```
-add SSH key to github etc. with ```ssh-keygen -t rsa -b 4096 -C "anonymous@mail.com```
+Add SSH key to github etc. with ```ssh-keygen -t rsa -b 4096 -C "anonymous@mail.com```
+
+## Time sync between ubuntu and windows
+
+```
+sudo apt-get install nptdate
+sudo ntpdate time.windows.com
+sudo hwclock --localtime --systohc
+```
 
 ## Sogou
 
@@ -25,6 +31,7 @@ Download from the [homepage](https://www.skype.com/en/get-skype/) and launch ```
 
 ## QtCreator
 
+`sudo apt-get install build-essential libgl1-mesa-dev`  
 Download from the [homepage](http://download.qt.io/official_releases/qt/), choose a version and download the installer, set the file permission using `chmod +x ~/Downloads/qt-opensource-linux-x64-5.11.1.run`, then run the installer with `~/Downloads/qt-opensource-linux-x64-5.11.1.run`.
 
 ## MATLAB
