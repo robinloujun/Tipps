@@ -17,13 +17,15 @@ sudo hwclock --localtime --systohc
 
 ## Sogou
 
-Download from the [homepage](https://pinyin.sogou.com/linux/?r=pinyin) and ```sudo dpkg -i Downloads/sogoupinyin_2.2.0.0108_amd64.deb```  
+Download from the [homepage](https://pinyin.sogou.com/linux/?r=pinyin) and ```sudo dpkg -i Downloads/sogoupinyin_2.2.0.0108_amd64.deb```    
+In case of website problem click [here](https://github.com/robinloujun/Tipps/blob/master/Files/sogoupinyin_2.2.0.0108_amd64.deb)
 
 ## Dropbox
 
 Download from the [homepage](https://www.dropbox.com/de/install-linux) and ```sudo dpkg -i Downloads/dropbox_2015.10.28_amd64.deb```  
 In case of Error with dependencies ```sudo apt-get install -f```  
-Can also try [this](https://www.dropbox.com/de/help/desktop-web/linux-commands) with tar-file
+Can also try [this](https://www.dropbox.com/de/help/desktop-web/linux-commands) with [tar-file](https://github.com/robinloujun/Tipps/blob/master/Files/nautilus-dropbox-1.6.2.tar.bz2)  
+In case of website problem click [here](https://github.com/robinloujun/Tipps/blob/master/Files/dropbox_2015.10.28_amd64.deb)
 
 ## Skype
 
