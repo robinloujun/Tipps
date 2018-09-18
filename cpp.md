@@ -1,4 +1,5 @@
 ## timers
+can also see the [blog text](https://blog.csdn.net/zxxSsdsd/article/details/14481627)
 
 #### time_t & difftime in ctime.h
 Problem is that the unit is only second
@@ -11,7 +12,7 @@ time(&finish);
 std::cout << difftime(finish, start) << " s." << std::endl;
 ```
 #### clock_t in ctime.h
-
+diff_time with higher accuracy 
 ```
 #include <ctime>
 clock_t start, diff;
