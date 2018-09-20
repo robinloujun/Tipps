@@ -1,3 +1,7 @@
+## To Do
+
+- [ ] summarize the error: undefined reference to '...'
+
 ## timers
 can also see the [blog text](https://blog.csdn.net/zxxSsdsd/article/details/14481627)
 
@@ -20,3 +24,6 @@ start = clock();
 diff = clock() - start;
 std::cout << ((float)diff)/CLOCKS_PER_SEC << " s." << std::endl;
 ```
+
+#### error: undefined reference to '...'
+[refer](https://blog.csdn.net/cserchen/article/details/5503556)
