@@ -17,7 +17,7 @@ sudo hwclock --localtime --systohc
 
 ## Sogou
 
-Download from the [homepage](https://pinyin.sogou.com/linux/?r=pinyin) and ```sudo dpkg -i Downloads/sogoupinyin_2.2.0.0108_amd64.deb```    
+Download from the [homepage](https://pinyin.sogou.com/linux/?r=pinyin) or directly download the [deb file](http://cdn2.ime.sogou.com/dl/index/1524572264/sogoupinyin_2.2.0.0108_amd64.deb?st=zJbjTyOEj5URSDHKoqOZ3A&e=1539533248&fn=sogoupinyin_2.2.0.0108_amd64.deb) and ```sudo dpkg -i Downloads/sogoupinyin_2.2.0.0108_amd64.deb```    
 In case of website problem click [here](https://github.com/robinloujun/Tipps/blob/master/Files/sogoupinyin_2.2.0.0108_amd64.deb?raw=true)
 
 ## Dropbox
