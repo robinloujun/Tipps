@@ -97,7 +97,14 @@ sudo apt-get install sublime-text
 Can also be installed with [tar-file](https://download.sublimetext.com/sublime_text_3_build_3143_x64.tar.bz2)
 
 # For XPS 15 9560
-Problem: cannot reboot the OS
 
-## NVIDIA driver
-System Settings -> Software & Updates -> NVIDIA Corporation: Unknow - Using NVIDIA binary library - ...
+## Before installing Ubuntu
+**Pre-setting in Windows:**      
+Boot laptop and press F12 -> BIOS Setup    
+System Configuration -> SATA Operation    
+Change SATA Operation from "RAID On" to "AHCI" (So the installer can detect the hard disk)
+
+## Problem: cannot reboot
+
+- NVIDIA driver: System Settings -> Software & Updates -> NVIDIA Corporation: Unknow - Using NVIDIA binary library
+- Grub: `sudo gedit /etc/default/grub` -> Find GRUB_CMDLINE_LINUX="" and change it to GRUB_CMDLINE_LINUX=”reboot=efi”
