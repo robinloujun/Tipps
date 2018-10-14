@@ -22,14 +22,14 @@ In case of website problem click [here](https://github.com/robinloujun/Tipps/blo
 
 ## Dropbox
 
-Download from the [homepage](https://www.dropbox.com/de/install-linux) and ```sudo dpkg -i Downloads/dropbox_2015.10.28_amd64.deb```  
+Download from the [homepage](https://www.dropbox.com/de/install-linux) or directly download the [deb file](https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb) and ```sudo dpkg -i Downloads/dropbox_2015.10.28_amd64.deb```  
 In case of Error with dependencies ```sudo apt-get install -f```  
 Can also try [this](https://www.dropbox.com/de/help/desktop-web/linux-commands) with [tar-file](https://github.com/robinloujun/Tipps/blob/master/Files/nautilus-dropbox-1.6.2.tar.bz2)  
 In case of website problem click [here](https://github.com/robinloujun/Tipps/blob/master/Files/dropbox_2015.10.28_amd64.deb?raw=true)
 
 ## Skype
 
-Download from the [homepage](https://www.skype.com/en/get-skype/) and launch ```sudo dpkg -i Downloads/skypeforlinux-64.deb```
+Download from the [homepage](https://www.skype.com/en/get-skype/) or directly download the [deb file](https://go.skype.com/skypeforlinux-64.deb) and launch ```sudo dpkg -i Downloads/skypeforlinux-64.deb```
 
 ## QtCreator
 
