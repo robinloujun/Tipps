@@ -40,7 +40,8 @@ Download from the [homepage](http://download.qt.io/official_releases/qt/), choos
 
 Download the installer from the [homepage](https://de.mathworks.com/downloads/web_downloads) and extract into a new folder like /home/user/MATLAB,   
 then install with ```sudo ~/MATLAB/install```. There is an [intruduction](https://de.mathworks.com/help/install/ug/install-mathworks-software.html).
-One more thing to do: add an entry to the launcher with ```sudo apt-get install matlab-support```
+One more thing to do: add an entry to the launcher with ```sudo apt-get install matlab-support```    
+Once user in matlab-support false, then [refer](https://de.mathworks.com/matlabcentral/answers/98599-why-will-matlab-not-start-up-properly-on-my-linux-or-unix-based-system)
 
 ## LaTeX
 
