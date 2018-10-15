@@ -109,3 +109,6 @@ Change SATA Operation from "RAID On" to "AHCI" (So the installer can detect the 
 
 - NVIDIA driver: System Settings -> Software & Updates -> NVIDIA Corporation: Unknow - Using NVIDIA binary library
 - Grub: `sudo gedit /etc/default/grub` -> Find GRUB_CMDLINE_LINUX="" and change it to GRUB_CMDLINE_LINUX=”reboot=efi”
+
+## Position of Certificate Authority (CA) in Ubuntu
+/etc/ssl/certs/
