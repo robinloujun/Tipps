@@ -104,6 +104,7 @@ Can also be installed with [tar-file](https://download.sublimetext.com/sublime_t
 Boot laptop and press F12 -> BIOS Setup    
 System Configuration -> SATA Operation    
 Change SATA Operation from "RAID On" to "AHCI" (So the installer can detect the hard disk)
+Check that Secure Boot -> Secure Boot Enable -> Disabled.
 
 ## Problem: cannot reboot
 
