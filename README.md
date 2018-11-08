@@ -1,18 +1,30 @@
-## Initilization for new Ubuntu
-```
-sudo apt-get install kate
-sudo apt-get install okular
-sudo apt-get install yakuake
-sudo apt-get install git-core
-```
-Add SSH key to github etc. with ```ssh-keygen -t rsa -b 4096 -C "anonymous@mail.com```
+# Initilization for new Ubuntu
 
-## Time sync between ubuntu and windows
+Synchronize time between ubuntu and windows
 
 ```
 sudo apt-get install nptdate
 sudo ntpdate time.windows.com
 sudo hwclock --localtime --systohc
+```
+
+## Basic tools
+```shell
+sudo apt-get install okular yakuake
+```
+Configurate the git
+```shell
+sudo apt-get install git-core
+```
+Add SSH key to github etc. with ```ssh-keygen -t rsa -b 4096 -C "anonymous@mail.com```  
+
+Install Sublime Text 3 following [Sublime Installation](https://github.com/robinloujun/Tipps/blob/master/Sublime.md#installation)
+
+## LaTeX
+
+```shell
+sudo apt-get install texlive-full
+sudo apt-get install texstudio
 ```
 
 ## Sogou
@@ -42,13 +54,6 @@ Download the installer from the [homepage](https://de.mathworks.com/downloads/we
 then install with ```sudo ~/MATLAB/install```. There is an [intruduction](https://de.mathworks.com/help/install/ug/install-mathworks-software.html).
 One more thing to do: add an entry to the launcher with ```sudo apt-get install matlab-support```    
 Once user in matlab-support false, then [refer](https://de.mathworks.com/matlabcentral/answers/98599-why-will-matlab-not-start-up-properly-on-my-linux-or-unix-based-system)
-
-## LaTeX
-
-```
-sudo apt-get install texlive-full
-sudo apt-get install texstudio
-```
 
 ## JabRef
 
