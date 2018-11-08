@@ -104,3 +104,13 @@ Check that Secure Boot -> Secure Boot Enable -> Disabled.
 ## When harddisk not properly unpluged
 i.e. `Error mounting /dev/sda1`   
 Run `sudo ntfsfix /dev/sda1` to fix it
+
+## Shell
+Disable the touchpad:
+```shell
+synclient touchpadoff=1
+```
+Enable the touchpad:
+```shell
+synclient touchpadoff=0
+```
