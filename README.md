@@ -64,6 +64,14 @@ In case of error ```Cannot write to preference file "matlab.prf" in "/home/user/
 
 [Java-related](http://help.jabref.org/en/Installation#verify-java-installation) and `sudo apt-get install jabref`
 
+
+## Customize the terminal
+[A useful .bashrc generator](http://bashrcgenerator.com/)
+
+```
+export PS1="\[\033[38;5;11m\]\u@\h\[$(tput sgr0)\]\[\033[38;5;15m\]:\[$(tput sgr0)\]\[\033[38;5;46m\]\w\[$(tput sgr0)\]\[\033[38;5;10m\]:\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
+```
+
 ## tmux
 An option for splitting the terminal
 ### Installation
