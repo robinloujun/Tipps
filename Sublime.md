@@ -11,6 +11,12 @@ echo "deb https://download.sublimetext.com/ apt/dev/" | sudo tee /etc/apt/source
 sudo apt-get update
 sudo apt-get install sublime-text
 ```
+
+In 18.04 -> install the stable release
+```
+sudo apt-add-repository "deb https://download.sublimetext.com/ apt/stable/"
+```
+
 Can also be installed with [tar-file](https://download.sublimetext.com/sublime_text_3_build_3143_x64.tar.bz2)
 
 ## Install Package Control
