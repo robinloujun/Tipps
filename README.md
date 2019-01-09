@@ -72,9 +72,22 @@ In case of error ```Cannot write to preference file "matlab.prf" in "/home/user/
 ## Customize the terminal
 [A useful .bashrc generator](http://bashrcgenerator.com/)
 
-```
+```bash
 export PS1="\[\033[38;5;11m\]\u@\h\[$(tput sgr0)\]\[\033[38;5;15m\]:\[$(tput sgr0)\]\[\033[38;5;46m\]\w\[$(tput sgr0)\]\[\033[38;5;10m\]:\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
 ```
+
+Add git branch name into prompt:
+```bash
+GIT_RADAR="/home/robin/Documents/git-radar/git-radar --bash "
+# if $GIT_RADAR_DO_NOT_FETCH is not set
+if [ -z "$GIT_RADAR_DO_NOT_FETCH" ]; then
+  GIT_RADAR="$GIT_RADAR --fetch "
+fi
+
+# write branch name into prompt
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[0;32m\]$($GIT_RADAR) \[\033[1;30m\]$\[\033[00m\] '
+```
+git-radar found [here]()
 
 ## tmux
 An option for splitting the terminal
