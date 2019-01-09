@@ -50,7 +50,11 @@ Download from the [homepage](https://www.skype.com/en/get-skype/) or directly do
 ## QtCreator
 
 `sudo apt-get install build-essential libgl1-mesa-dev`  
-Download from the [homepage](http://download.qt.io/official_releases/qt/), choose a version and download the installer, set the file permission using `chmod +x ~/Downloads/qt-opensource-linux-x64-5.11.1.run`, then run the installer with `~/Downloads/qt-opensource-linux-x64-5.11.1.run`.
+Download from the [homepage](http://download.qt.io/official_releases/qt/), choose a version and download the installer, set  the file permission using `chmod +x ~/Downloads/qt-opensource-linux-x64-5.11.1.run`, then run the installer with `~/Downloads/qt-opensource-linux-x64-5.11.1.run`.
+
+## IntelliJ
+
+Download from the [homepage](https://www.jetbrains.com/idea/download/index.html#section=linux), choose the community version. Extract the files using ```sudo tar -zxvf ideaIC-2018.3.2.tar.gz -C /opt```, then initialize the IDE with ```/opt/idea-IC-183.4886.37/bin/idea.sh```.
 
 ## MATLAB
 
