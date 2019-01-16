@@ -68,6 +68,8 @@ In case of error ```Cannot write to preference file "matlab.prf" in "/home/user/
 
 [Java-related](http://help.jabref.org/en/Installation#verify-java-installation) and `sudo apt-get install jabref`
 
+## XMind (Mind Mapping APP)
+Download from the [homepage](https://www.xmind.net/download/) and launch ```sudo dpkg -i Downloads/XMind-ZEN-for-Linux-64bit.deb```
 
 ## Customize the terminal
 [A useful .bashrc generator](http://bashrcgenerator.com/)
