@@ -37,3 +37,13 @@ download (got %s instead of %s), please try manual install'
 % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' 
 ).write(by) 
 ```
+
+## Fix problem with Fcitx Input
+Source: (sublime-text-imfix)[https://github.com/lyfeyaj/sublime-text-imfix]
+```shell
+sudo apt-get update && sudo apt-get upgrade
+git clone https://github.com/lyfeyaj/sublime-text-imfix.git
+cd sublime-text-imfix
+./sublime-imfix
+```
+Final step: Reboot
