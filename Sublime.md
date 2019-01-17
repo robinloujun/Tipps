@@ -39,7 +39,7 @@ download (got %s instead of %s), please try manual install'
 ```
 
 ## Fix problem with Fcitx Input
-Source: (sublime-text-imfix)[https://github.com/lyfeyaj/sublime-text-imfix]
+Source: [sublime-text-imfix](https://github.com/lyfeyaj/sublime-text-imfix)
 ```shell
 sudo apt-get update && sudo apt-get upgrade
 git clone https://github.com/lyfeyaj/sublime-text-imfix.git
