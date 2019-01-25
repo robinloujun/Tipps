@@ -47,3 +47,32 @@ cd sublime-text-imfix
 ./sublime-imfix
 ```
 Final step: Reboot
+
+## Java Run
+Save the file as `Java.sublime-build` in `~/.config/sublime-text-3/Packages/User`
+```
+{
+	"shell_cmd": "javac \"${file}\"",
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"working_dir": "${file_path}",
+	"selector": "source.java",
+	"variants":
+	[
+		{
+			"name": "Open Input",
+			"shell_cmd": "subl \"${file_path}/${file_base_name}_subl.txt\""
+		},
+		{
+			"name": "Run",
+			"shell_cmd": "javac \"${file}\" && java \"${file_base_name}\""
+		},
+		{
+			"name": "Run with input",
+ 			// Linux line-
+			"shell_cmd": "( test ! -e \"${file_path}/${file_base_name}_subl.txt\" && subl \"${file_path}/${file_base_name}_subl.txt\") ||  ( javac \"${file}\" && java \"${file_base_name}\" < \"${file_path}/${file_base_name}_subl.txt\" "
+ 			// Windows line-
+ 			// "shell_cmd": "if not exist \"${file_path}/${file_base_name}_subl.txt\" (subl \"${file_path}/${file_base_name}_subl.txt\") else ( javac \"${file}\" && java \"${file_base_name}\" < \"${file_path}/${file_base_name}_subl.txt\")"
+ 		}
+ 	]
+}
+```
