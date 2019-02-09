@@ -142,6 +142,24 @@ Check that Secure Boot -> Secure Boot Enable -> Disabled.
 i.e. `Error mounting /dev/sda1`   
 Run `sudo ntfsfix /dev/sda1` to fix it
 
+if 
+```shell
+Mounting volume... NTFS signature is missing.
+FAILED
+Attempting to correct errors... NTFS signature is missing.
+FAILED
+Failed to startup volume: Invalid argument
+NTFS signature is missing.
+Trying the alternate boot sector
+Unrecoverable error
+Volume is corrupt. You should run chkdsk.
+```
+Run 
+```shell
+sudo apt-get install testdisk
+sudo testdisk
+```
+
 ## Shell
 Disable the touchpad:
 ```shell
