@@ -169,3 +169,10 @@ Enable the touchpad:
 ```shell
 synclient touchpadoff=0
 ```
+
+## Some linking problems
+```shell
+sudo ln -sf /usr/local/include/eigen3/Eigen /usr/local/include/Eigen
+sudo ln -s  /usr/bin/vtk6 /usr/bin/vtk
+```
+
