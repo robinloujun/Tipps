@@ -137,3 +137,20 @@ Check that Secure Boot -> Secure Boot Enable -> Disabled.
 
 ## Position of Certificate Authority (CA) in Ubuntu
 /etc/ssl/certs/
+
+### A note
+http://ppa.launchpad.net/bzindovic/suitesparse-bugfix-1319687/ubuntu
+```shell
+E: The repository 'http://ppa.launchpad.net/bzindovic/suitesparse-bugfix-1319687/ubuntu bionic Release' does not have a Release file.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+```
+In Software & Updates
+
+|Item||
+|--|--|
+|type|binary|
+|URI|http://ppa.launchpad.net/bzindovic/suitesparse-bugfix-1319687/ubuntu|
+|Distribution|bionic|
+|Components|main|
+|Comment||
