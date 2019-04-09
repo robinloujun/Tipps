@@ -64,7 +64,7 @@ Download the installer from the [homepage](https://de.mathworks.com/downloads/we
 then install with ```sudo ~/MATLAB/install```. There is an [intruduction](https://de.mathworks.com/help/install/ug/install-mathworks-software.html).
 One more thing to do: add an entry to the launcher with ```sudo apt-get install matlab-support```    
 Once user in matlab-support false, then [refer](https://de.mathworks.com/matlabcentral/answers/98599-why-will-matlab-not-start-up-properly-on-my-linux-or-unix-based-system)  
-In case of error ```Cannot write to preference file "matlab.prf" in "/home/user/.matlab/R2008b".Check file permissions.```, run ```sudo chown rootuser /home/user/.matlab/```.
+In case of error ```Cannot write to preference file "matlab.prf" in "/home/user/.matlab/R2018b".Check file permissions.```, run ```sudo chown rootuser /home/user/.matlab/R2018b```. (regarding the matlab version)
 
 ## JabRef
 
