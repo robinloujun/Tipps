@@ -36,6 +36,8 @@ sudo apt-get install fcitx-bin
 Download from the [homepage](https://pinyin.sogou.com/linux/?r=pinyin) or directly download the [deb file](http://cdn2.ime.sogou.com/dl/index/1524572264/sogoupinyin_2.2.0.0108_amd64.deb?st=zJbjTyOEj5URSDHKoqOZ3A&e=1539533248&fn=sogoupinyin_2.2.0.0108_amd64.deb) and ```sudo dpkg -i Downloads/sogoupinyin_2.2.0.0108_amd64.deb```    
 In case of website problem click [here](https://github.com/robinloujun/Tipps/blob/master/Files/sogoupinyin_2.2.0.0108_amd64.deb?raw=true)
 
+In Settings -> Region & Language -> Manage Installed Languages, set the `Keyboard input method System` to fctix and install Chinese (symplified)
+
 ## Dropbox
 
 Download from the [homepage](https://www.dropbox.com/de/install-linux) or directly download the [deb file](https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb) and ```sudo dpkg -i Downloads/dropbox_2015.10.28_amd64.deb```  
