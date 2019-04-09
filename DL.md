@@ -19,7 +19,7 @@ sudo apt-get install libhdf5-serial-dev
 sudo apt-get install python3-dev python3-tk python-imaging-tk
 ```
 CUDA 9 requires gcc v6 but Ubuntu 18.04 ships with gcc v7 so we need to install gcc and g++ v6  
-Not sure if needed since CUDA is now with newer vision 10.1
+Not sure if needed since CUDA is now with newer vision 10.0
 ```shell
 sudo apt-get install gcc-6 g++-6
 ```
@@ -29,7 +29,7 @@ Download the driver from the [homepage](https://www.nvidia.com/download/driverRe
 chmod +x Downloads/NVIDIA-Linux-x86_64–410.57.run
 sudo Downloads/NVIDIA-Linux-x86_64–410.57.run --no-x-check
 ```
-`Continue installation` -> `No` for registering the kernel module sources with DKMS -> `Yes` for install Nvidia 32-bit compatible libraries -> `No` for automatically updating X configuration file
+**step-by-step**: `Continue installation` -> `No` for registering the kernel module sources with DKMS -> `Yes` for install Nvidia 32-bit compatible libraries -> `No` for automatically updating X configuration file
 
 Reboot after the successful installation.
 ```shell
@@ -58,6 +58,78 @@ An example
 |    0      1641      G   /usr/bin/gnome-shell                         150MiB |
 |    0     19091      G   /usr/lib/firefox/firefox                       6MiB |
 +-----------------------------------------------------------------------------+
+```
+
+### Install CUDA Toolkit and cuDNN
+
+Download CUDA Toolkit from the [homepage](https://developer.nvidia.com/cuda-10.0-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1804&target_type=runfilelocal)
+```shell
+chmod +x Downloads/cuda_10.0.130_410.48_linux.run
+sudo ./Downloads/cuda_10.0.130_410.48_linux.run
+```
+**step-by-step**: `accept` for accept the EULA -> `n` for installing NVIDIA Accelerated Graphics Driver for Linux-x86_64 410.48 -> `y` for installing CUDA 10.0 Toolkit -> use default location -> `y` for installing a symbolic link -> `y` for installing samples -> set samples location
+
+Add the following lines to `~/.bashrc`
+```bash
+# NVIDIA CUDA Toolkit
+export PATH=/usr/local/cuda-10.0/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64:$LD_LIBRARY_PATH
+```
+Or add `/usr/local/cuda-10.0/lib64` to `/etc/ld.so.conf` and run `ldconfig` as root
+
+Run `source .bashrc` and test with `nvcc -V`, the result should be
+```shell
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2018 NVIDIA Corporation
+Built on Sat_Aug_25_21:08:01_CDT_2018
+Cuda compilation tools, release 10.0, V10.0.130
+```
+
+### Install cuDNN
+
+Download `cuDNN Library for Linux` from the [homepage](https://developer.nvidia.com/cudnn)
+
+Extract the tgz and copy the files with (note that the path might be different)
+```shell
+sudo cp -R Downloads/cuda/include/* /usr/local/cuda-10.0/include
+sudo cp -R Downloads/cuda/lib64/* /usr/local/cuda-10.0/lib64
+```
+
+### Create virtual environment for Python
+
+If pip not installed
+```shell
+wget https://bootstrap.pypa.io/get-pip.py
+sudo python3 get-pip.py
+```
+Install the virtual environment
+```shell
+sudo pip install virtualenv virtualenvwrapper
+sudo rm -rf ~/get-pip.py ~/.cache/pip
+```
+Add the following lines to `.bashrc`
+```bash
+# virtualenv and virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source /usr/local/bin/virtualenvwrapper.sh
+```
+Run `source .bashrc` and create the virtual environment with
+```shell
+mkvirtualenv ${venv_name} -p python3
+```
+
+### Install tensorflow
+First get into virtual environment and then install any python modules and also tensorflow-gpu
+```shell
+workon ${venv_name}
+pip install tensorflow-gpu
+```
+Verify if tensorflow is successfully installed using
+```shell
+python
+>>> import tensorflow
+>>>
 ```
 
 **Refer**: 
