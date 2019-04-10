@@ -29,7 +29,6 @@ sudo apt-get install texstudio
 
 ## Sogou
 
-
 ```shell
 sudo apt-get install fcitx-bin
 ```
@@ -92,6 +91,17 @@ fi
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\033[0;32m\]$($GIT_RADAR) \[\033[1;30m\]$\[\033[00m\] '
 ```
 git-radar found [here](/git-radar)
+
+## Add Startup Application
+
+Take yakuake as an example
+In `Startup Applications Preferences`, add the following items
+
+|||
+|:--:|:--:|
+|Name:|Yakuake|
+|Command:|sh -c "sleep 3s;yakuake"|
+|Comment:|Launch the KDE Yakuake|
 
 ## tmux
 An option for splitting the terminal
