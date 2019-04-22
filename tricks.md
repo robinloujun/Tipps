@@ -38,3 +38,8 @@ Run `sudo ntfsfix /dev/sda1` to fix it
   sudo ln -sf /usr/local/include/eigen3/Eigen /usr/local/include/Eigen
   sudo ln -s  /usr/bin/vtk6 /usr/bin/vtk
   ```
+- Replacement 
+  ```shell
+  sed -i "s/[string_to_be_replaced]/[replacement]/g" `grep [string_to_be_replaced] -rl [path]`
+  ```
+  
