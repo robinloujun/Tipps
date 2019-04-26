@@ -132,6 +132,9 @@ python
 >>>
 ```
 
+### Use SSD for object detection
+Problem with `Data layer prefetch queue empty` -> cf. the [issue](https://github.com/weiliu89/caffe/issues/863#issuecomment-469534074)
+
 **Refer**: 
 - [Ubuntu 18.04: Install TensorFlow and Keras for Deep Learning](https://www.pyimagesearch.com/2019/01/30/ubuntu-18-04-install-tensorflow-and-keras-for-deep-learning/)
 - [How to install Nvidia drivers and cuda-10.0 for RTX 2080 Ti GPU on Ubuntu-16.04/18.04](https://medium.com/@avinchintha/how-to-install-nvidia-drivers-and-cuda-10-0-for-rtx-2080-ti-gpu-on-ubuntu-16-04-18-04-ce32e4edf1c0)
