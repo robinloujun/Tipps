@@ -23,6 +23,8 @@ Not sure if needed since CUDA is now with newer vision 10.0
 ```shell
 sudo apt-get install gcc-6 g++-6
 ```
+Note on 02.05: the gcc version was updated to 7.4.0 but the NVIDIA kernel was built with gcc 7.3.0, then the driver must be reinstalled.
+
 ### Install latest NVIDIA drivers
 Download the driver from the [homepage](https://www.nvidia.com/download/driverResults.aspx/138279/en-us) (410.57 at the moment).
 ```shell
