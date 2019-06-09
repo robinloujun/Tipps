@@ -74,6 +74,13 @@ In case of error ```Cannot write to preference file "matlab.prf" in "/home/user/
 ## XMind (Mind Mapping APP)
 Download from the [homepage](https://www.xmind.net/download/) and launch ```sudo dpkg -i Downloads/XMind-ZEN-for-Linux-64bit.deb```
 
+## HP eprint
+Download from the [homepage](https://developers.hp.com/hp-linux-imaging-and-printing/gethplip) and launch with
+```shell
+chmod +x Downloads/hplip-3.19.5.run
+./Downloads/hplip-3.19.5.run
+```
+
 ## Customize the terminal
 [A useful .bashrc generator](http://bashrcgenerator.com/)
 
