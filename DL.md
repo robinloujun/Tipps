@@ -26,10 +26,10 @@ sudo apt-get install gcc-6 g++-6
 Note on 02.05: the gcc version was updated to 7.4.0 but the NVIDIA kernel was built with gcc 7.3.0, then the driver must be reinstalled.
 
 ### Install latest NVIDIA drivers
-Download the driver from the [homepage](https://www.nvidia.com/download/driverResults.aspx/138279/en-us) (410.57 at the moment).
+Download the driver from the [homepage](https://www.nvidia.com/Download/driverResults.aspx/151568/en-us) (430.50 at the moment).
 ```shell
-chmod +x Downloads/NVIDIA-Linux-x86_64–410.57.run
-sudo Downloads/NVIDIA-Linux-x86_64–410.57.run --no-x-check
+chmod +x Downloads/NVIDIA-Linux-x86_64-430.50.run
+sudo Downloads/NVIDIA-Linux-x86_64-430.50.run --no-x-check
 ```
 **step-by-step**: `Continue installation` -> `No` for registering the kernel module sources with DKMS -> `Yes` for install Nvidia 32-bit compatible libraries -> `No` for automatically updating X configuration file
 
