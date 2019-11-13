@@ -20,11 +20,6 @@ Add SSH key to github etc. with ```ssh-keygen -t rsa -b 4096 -C "anonymous@mail.
 
 Install Sublime Text 3 following [Sublime Installation](https://github.com/robinloujun/Tipps/blob/master/Sublime.md#installation)
 
-Start yakuake on startup: in *Startup Applications*, add an item with the information
-- Name: yakuake
-- Command: sh -c "sleep 1s;yakuake"
-- Comment: Launch the KDE Yakuake
-
 ## LaTeX
 
 ```shell
