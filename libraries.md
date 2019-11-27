@@ -1,9 +1,10 @@
-#Libraries
+# Libraries
 
 ### Eigen
-Download a released version from [Eigen Wiki](http://eigen.tuxfamily.org/index.php?title=Main_Page#Download), the source code are maintained in [Bitbucket](https://bitbucket.org/eigen/eigen/src/default/)
+Download a released version from [Eigen Wiki](http://eigen.tuxfamily.org/index.php?title=Main_Page#Download), the source code are maintained in [Bitbucket](https://bitbucket.org/eigen/eigen/src/default/).
 
 ```shell
+cd {$eigen_path}
 mkdir build
 cd build
 cmake ..
