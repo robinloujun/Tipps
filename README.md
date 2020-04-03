@@ -3,10 +3,9 @@
 Synchronize time between ubuntu and windows
 
 ```
-sudo apt-get install nptdate
-sudo ntpdate time.windows.com
-sudo hwclock --localtime --systohc
+timedatectl set-local-rtc 1 --adjust-system-clock
 ```
+to check the result, run `timedatectl` and the result should be `RTC in local TZ: yes`
 
 ## Basic tools
 ```shell
