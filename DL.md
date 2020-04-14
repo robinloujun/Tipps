@@ -97,7 +97,7 @@ sudo cp -R Downloads/cuda/include/* /usr/local/cuda-10.0/include
 sudo cp -R Downloads/cuda/lib64/* /usr/local/cuda-10.0/lib64
 ```
 
-### Create virtual environment for Python
+### Create virtual environment for Python (venv)
 
 If pip not installed
 ```shell
@@ -119,6 +119,18 @@ source /usr/local/bin/virtualenvwrapper.sh
 Run `source .bashrc` and create the virtual environment with
 ```shell
 mkvirtualenv ${venv_name} -p python3
+```
+
+### Install Anaconda
+Download the Linux installer from [homepage](https://www.anaconda.com/distribution/), better check the [hashes](https://docs.anaconda.com/anaconda/install/hashes/Anaconda3-2020.02-Linux-x86_64.sh-hash/) before installing
+```
+curl –O https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
+# Verify the Download Checksum
+sha256sum Anaconda3-2020.02-Linux-x86_64.sh
+# output: 2b9f088b2022edb474915d9f69a803d6449d5fdb4c303041f60ac4aefcc208bb  Anaconda3-2020.02-Linux-x86_64.sh
+
+# Run installation script
+bash Anaconda3-2019.07-Linux-x86_64.sh
 ```
 
 ### Install tensorflow
