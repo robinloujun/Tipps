@@ -42,4 +42,7 @@ Run `sudo ntfsfix /dev/sda1` to fix it
   ```shell
   sed -i "s/[string_to_be_replaced]/[replacement]/g" `grep [string_to_be_replaced] -rl [path]`
   ```
-  
+- Check the Firewall status
+  ```shell
+  sudo ufw status
+  ```
