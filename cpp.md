@@ -27,3 +27,12 @@ std::cout << ((float)diff)/CLOCKS_PER_SEC << " s." << std::endl;
 
 #### error: undefined reference to '...'
 [refer](https://blog.csdn.net/cserchen/article/details/5503556)
+
+
+## Compiling pcl from source with Anaconda
+pcl=1.9.1 vtk=8.2.0
+when facing problem like error 
+```shell
+error: /usr/lib/../lib64/libSM.so: undefined reference to `uuid_generate@UUID_1.0'
+```
+ccmake and modify the Qt5 relative source from Anaconda to `/opt/Qt5.11.2/5.11.2/gcc_64/lib/cmake/` (check the version before modification)
